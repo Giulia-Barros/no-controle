@@ -1,0 +1,97 @@
+/* ============ ESTILO GERAL ============ */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ============ CONTAINER PRINCIPAL ============ */
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 95%;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+/* ============ TEXTO E BOTÕES ============ */
+.text-box {
+    flex: 1 1 300px;
+}
+
+.text-box h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    color: #007bff;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.btn-custom {
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.btn-outline-custom {
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* ============ IMAGEM ============ */
+.image-box {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============ RESPONSIVIDADE ============ */
+@media (max-width: 768px) {
+    .main-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .btn-custom {
+        margin-top: 15px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .btn-outline-custom {
+        margin-top: 10px;
+    }
+
+    .image-box {
+        margin-top: 30px;
+    }
+}

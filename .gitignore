@@ -1,0 +1,23 @@
+# Pasta gerada com collectstatic
+/staticfiles/
+
+# Uploads de usuários
+/media/
+
+# Ambiente virtual
+.venv/
+
+# Arquivos de ambiente
+.env
+*.env
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# IDEs e arquivos de sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

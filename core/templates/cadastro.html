@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+</head>
+<body>
+    <div class="main-box">
+        <div class="text-box">
+            <a href="{% url 'home' %}" class="btn btn-voltar mb-3">← Voltar</a>
+            <h1 class="logo-text">NO CONTROLE</h1>
+            <h2>Crie sua Conta</h2>
+
+            <form method="post" novalidate>
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        {{ field.errors }}
+                        {{ field }}
+                    </div>
+                {% endfor %}
+
+                <button type="submit" class="btn btn-primary btn-block btn-custom mt-2">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
